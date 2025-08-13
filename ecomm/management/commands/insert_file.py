@@ -11,7 +11,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('file_path', type=str,
-                            help='/home/souravjamwal77/alkye-django-task/ecomm/large_dataset.csv')
+                            help='File path')
 
     def handle(self, *args, **options):
         csv_path = options['file_path']
